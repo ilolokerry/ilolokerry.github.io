@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerry Ilolo — SOC Analyst Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="statusbar">
+    <span class="statusbar__dot" aria-hidden="true"></span>
+    <span class="statusbar__text">SOC STATUS: MONITORING</span>
+    <span class="statusbar__time" id="clock">--:--:--</span>
+  </div>
+
+  <header class="hero">
+    <div class="hero__meta">
+      <span class="chip chip--open">STATUS: OPEN TO WORK</span>
+      <span class="mono hero__id">ANALYST-ID: K.ILOLO</span>
+    </div>
+    <h1 class="hero__title">Kerry Ilolo</h1>
+    <p class="hero__role">SOC Analyst &mdash; Alert Triage · Threat Hunting · Incident Response</p>
+    <p class="hero__summary">
+      I investigate alerts, trace attack chains, and write the reports that let the next
+      analyst pick up exactly where I left off. Based in Lagos, Nigeria.
+    </p>
+    <div class="hero__actions">
+      <a href="#labs" class="btn btn--primary">View case files</a>
+      <a href="https://github.com/ilolokerry" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/ilolo-kerry" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="panel" id="about">
+      <h2 class="panel__title"><span class="mono">// </span>About</h2>
+      <p class="panel__text">
+        B.Eng in Computer Engineering (Afe Babalola University, 2025). CompTIA Security+ and CySA+
+        certified, currently working through SC-200. I build home labs to practice what a real shift
+        looks like &mdash; triaging alerts, hunting across logs, and mapping findings to MITRE ATT&amp;CK
+        &mdash; then document each one the way I'd hand off a real case.
+      </p>
+      <ul class="cert-list">
+        <li class="mono">CompTIA Security+</li>
+        <li class="mono">CompTIA CySA+</li>
+        <li class="mono">SC-200 &mdash; in progress</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="labs">
+      <h2 class="panel__title"><span class="mono">// </span>Case Files</h2>
+      <p class="panel__subtitle">Home lab investigations, documented like real incidents.</p>
+
+      <div class="cases">
+
+        <article class="case">
+          <div class="case__head">
+            <span class="mono case__id">CASE-001</span>
+            <span class="chip chip--closed">DOCUMENTED</span>
+          </div>
+          <h3 class="case__title">Cloud Honeypot &amp; SOC Lab</h3>
+          <p class="case__desc">
+            Deployed an internet-facing Windows VM on Azure to attract live attacker traffic,
+            connected it to Microsoft Sentinel, and used KQL to extract IOCs and build a
+            live attack map from real intrusion attempts.
+          </p>
+          <div class="case__tags">
+            <span class="tag mono">Azure</span>
+            <span class="tag mono">Sentinel</span>
+            <span class="tag mono">KQL</span>
+          </div>
+          <a href="#" class="case__link mono">read report &rarr;</a>
+        </article>
+
+        <article class="case">
+          <div class="case__head">
+            <span class="mono case__id">CASE-002</span>
+            <span class="chip chip--closed">DOCUMENTED</span>
+          </div>
+          <h3 class="case__title">Splunk Threat Hunting Lab</h3>
+          <p class="case__desc">
+            Traced a full attack chain across execution, persistence, and defense evasion.
+            Hunted PowerShell and Cmd execution, registry persistence, and lateral movement
+            via PsExec, mapped to MITRE ATT&amp;CK.
+          </p>
+          <div class="case__tags">
+            <span class="tag mono">Splunk</span>
+            <span class="tag mono">MITRE ATT&amp;CK</span>
+          </div>
+          <a href="https://github.com/ilolokerry/Threat-Hunting-Lab-Splunk" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
+        </article>
+
+        <article class="case">
+          <div class="case__head">
+            <span class="mono case__id">CASE-003</span>
+            <span class="chip chip--closed">DOCUMENTED</span>
+          </div>
+          <h3 class="case__title">Endpoint Monitoring with Wazuh</h3>
+          <p class="case__desc">
+            Configured file integrity monitoring and brute-force detection rules, validated
+            through simulated SSH brute-force attempts and unauthorized file modification.
+          </p>
+          <div class="case__tags">
+            <span class="tag mono">Wazuh</span>
+            <span class="tag mono">FIM</span>
+          </div>
+          <a href="https://github.com/ilolokerry/Endpoint-Monitoring-Threat-Detection-Lab-with-Wazuh" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
+        </article>
+
+        <article class="case">
+          <div class="case__head">
+            <span class="mono case__id">CASE-004</span>
+            <span class="chip chip--progress">IN PROGRESS</span>
+          </div>
+          <h3 class="case__title">Live SOC Monitoring &mdash; LetsDefend</h3>
+          <p class="case__desc">
+            Triaged 100+ real-time alerts spanning phishing, malware, email security, and
+            web-based attacks using structured IR playbooks, with full incident reports.
+          </p>
+          <div class="case__tags">
+            <span class="tag mono">LetsDefend</span>
+            <span class="tag mono">IR Playbooks</span>
+          </div>
+          <a href="https://github.com/ilolokerry/soc-alert-incident-reports" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="panel" id="toolkit">
+      <h2 class="panel__title"><span class="mono">// </span>Toolkit</h2>
+      <div class="toolkit-grid mono">
+        <span>Splunk</span>
+        <span>Microsoft Sentinel</span>
+        <span>Defender XDR</span>
+        <span>Elastic</span>
+        <span>Wazuh</span>
+        <span>Wireshark</span>
+        <span>YARA / Sigma</span>
+        <span>TheHive</span>
+        <span>Volatility</span>
+        <span>Zeek</span>
+      </div>
+    </section>
+
+    <section class="panel panel--contact" id="contact">
+      <h2 class="panel__title"><span class="mono">// </span>Escalate to me</h2>
+      <p class="panel__text">
+        Open to SOC Analyst (Tier 1/2) roles. Reach out on LinkedIn or GitHub above,
+        or by email.
+      </p>
+      <a href="mailto:you@example.com" class="btn btn--primary">Send an email</a>
+    </section>
+
+  </main>
+
+  <footer class="footer mono">
+    <span>&copy; <span id="year"></span> Kerry Ilolo</span>
+    <span>Lagos, Nigeria</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
