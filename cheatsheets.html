@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOC Cheat-Sheets — Kerry Ilolo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cheatsheets.css">
+</head>
+<body>
+
+  <div class="statusbar">
+    <span class="statusbar__dot" aria-hidden="true"></span>
+    <span class="statusbar__text">SOC STATUS: MONITORING</span>
+    <span class="statusbar__time" id="clock">--:--:--</span>
+  </div>
+
+  <header class="hero hero--compact">
+    <div class="hero__meta">
+      <a href="index.html" class="mono back-link">&larr; back to profile</a>
+    </div>
+    <h1 class="hero__title">SOC Cheat-Sheets</h1>
+    <p class="hero__summary">
+      Quick-reference notes I keep on hand during triage &mdash; queries, event IDs, and
+      playbooks. Each entry opens the file in its GitHub repo.
+    </p>
+  </header>
+
+  <main>
+    <section class="panel" id="sheet-index">
+      <h2 class="panel__title"><span class="mono">// </span>Index</h2>
+      <p class="panel__subtitle">Click any entry to open the source file on GitHub.</p>
+
+      <ul class="sheet-list mono" id="sheetList">
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
+          <span class="sheet-item__name">SOC Alert Triage Checklist</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
+          <span class="sheet-item__name">MITRE ATT&amp;CK Quick Reference</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/Threat-Hunting-Lab-Splunk">
+          <span class="sheet-item__name">SPL Query Cheat Sheet</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
+          <span class="sheet-item__name">KQL Query Cheat Sheet</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
+          <span class="sheet-item__name">Windows Event ID Reference</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/Threat-Hunting-Lab-Splunk">
+          <span class="sheet-item__name">PowerShell Log Analysis Commands</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/Endpoint-Monitoring-Threat-Detection-Lab-with-Wazuh">
+          <span class="sheet-item__name">Linux Log Analysis Commands</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry">
+          <span class="sheet-item__name">Network Traffic Analysis (Wireshark)</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry">
+          <span class="sheet-item__name">IOC Types &amp; Defanging Reference</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
+          <span class="sheet-item__name">Incident Response Playbook Index</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+      </ul>
+
+      <p class="panel__text sheet-note">
+        Placeholder titles &mdash; update the <span class="mono">data-url</span> on each
+        <span class="mono">&lt;li&gt;</span> in cheatsheets.html to point at the exact
+        file, and rename entries to match your actual cheat-sheet repo.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>&copy; <span id="year"></span> Kerry Ilolo</span>
+    <span>Lagos, Nigeria</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/cheatsheets.js"></script>
+</body>
+</html>
