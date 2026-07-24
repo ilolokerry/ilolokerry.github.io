@@ -31,6 +31,7 @@
       <a href="#labs" class="btn btn--primary">View case files</a>
       <a href="https://github.com/ilolokerry" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
       <a href="https://linkedin.com/in/ilolo-kerry" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="cheatsheets.html" class="btn btn--ghost">SOC Cheat-Sheets</a>
     </div>
   </header>
 
@@ -39,16 +40,28 @@
     <section class="panel" id="about">
       <h2 class="panel__title"><span class="mono">// </span>About</h2>
       <p class="panel__text">
-        B.Eng in Computer Engineering (Afe Babalola University, 2025). CompTIA Security+ and CySA+
-        certified, currently working through SC-200. I build home labs to practice what a real shift
-        looks like &mdash; triaging alerts, hunting across logs, and mapping findings to MITRE ATT&amp;CK
-        &mdash; then document each one the way I'd hand off a real case.
+        I am a Cyber Security Analyst who contributes to Security Operations Center (SOC) activities,
+        including monitoring and analyzing system and network logs to detect anomalous behavior and
+        applying incident response procedures in lab settings. My work focuses on configuring and
+        testing security tools and monitoring solutions while gaining practical exposure to threat
+        intelligence, vulnerability management, and defensive strategies.
       </p>
-      <ul class="cert-list">
-        <li class="mono">CompTIA Security+</li>
-        <li class="mono">CompTIA CySA+</li>
-        <li class="mono">SC-200 &mdash; in progress</li>
-      </ul>
+      <p class="panel__text">
+        A graduate of Afe Babalola University with a Bachelor of Engineering in Computer Engineering,
+        I hold certifications including CompTIA Security+ and CompTIA CySA+. My core competencies
+        include threat detection and analysis, incident response, and SOC operations. I am committed
+        to continually enhancing my skills to strengthen cybersecurity defenses and address evolving
+        threats.
+      </p>
+
+      <div class="subsection" id="certifications">
+        <h3 class="subsection__title mono">/certifications</h3>
+        <ul class="cert-list">
+          <li class="mono">CompTIA Security+</li>
+          <li class="mono">CompTIA CySA+</li>
+          <li class="mono">SC-200 &mdash; in progress</li>
+        </ul>
+      </div>
     </section>
 
     <section class="panel" id="labs">
@@ -62,18 +75,16 @@
             <span class="mono case__id">CASE-001</span>
             <span class="chip chip--closed">DOCUMENTED</span>
           </div>
-          <h3 class="case__title">Cloud Honeypot &amp; SOC Lab</h3>
+          <h3 class="case__title">Live SOC Monitoring &mdash; LetsDefend</h3>
           <p class="case__desc">
-            Deployed an internet-facing Windows VM on Azure to attract live attacker traffic,
-            connected it to Microsoft Sentinel, and used KQL to extract IOCs and build a
-            live attack map from real intrusion attempts.
+            Triaged 100+ real-time alerts spanning phishing, malware, email security, and
+            web-based attacks using structured IR playbooks, with full incident reports.
           </p>
           <div class="case__tags">
-            <span class="tag mono">Azure</span>
-            <span class="tag mono">Sentinel</span>
-            <span class="tag mono">KQL</span>
+            <span class="tag mono">LetsDefend</span>
+            <span class="tag mono">IR Playbooks</span>
           </div>
-          <a href="#" class="case__link mono">read report &rarr;</a>
+          <a href="https://github.com/ilolokerry/soc-alert-incident-reports" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
         </article>
 
         <article class="case">
@@ -99,6 +110,27 @@
             <span class="mono case__id">CASE-003</span>
             <span class="chip chip--closed">DOCUMENTED</span>
           </div>
+          <h3 class="case__title">Azure Cloud SOC &mdash; Microsoft Sentinel &amp; Defender XDR</h3>
+          <p class="case__desc">
+            Deployed Microsoft Sentinel as a cloud SIEM, connecting Azure log sources into a
+            single monitoring workspace. Wrote KQL queries and built custom Sentinel analytics
+            rules to detect and correlate suspicious activity, cutting the time it took to spot
+            threats. Investigated incidents in Sentinel and Defender XDR and mapped attacker
+            techniques to MITRE ATT&amp;CK.
+          </p>
+          <div class="case__tags">
+            <span class="tag mono">Sentinel</span>
+            <span class="tag mono">Defender XDR</span>
+            <span class="tag mono">KQL</span>
+          </div>
+          <a href="https://github.com/ilolokerry/soc-alert-incident-reports" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
+        </article>
+
+        <article class="case">
+          <div class="case__head">
+            <span class="mono case__id">CASE-004</span>
+            <span class="chip chip--closed">DOCUMENTED</span>
+          </div>
           <h3 class="case__title">Endpoint Monitoring with Wazuh</h3>
           <p class="case__desc">
             Configured file integrity monitoring and brute-force detection rules, validated
@@ -111,23 +143,6 @@
           <a href="https://github.com/ilolokerry/Endpoint-Monitoring-Threat-Detection-Lab-with-Wazuh" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
         </article>
 
-        <article class="case">
-          <div class="case__head">
-            <span class="mono case__id">CASE-004</span>
-            <span class="chip chip--progress">IN PROGRESS</span>
-          </div>
-          <h3 class="case__title">Live SOC Monitoring &mdash; LetsDefend</h3>
-          <p class="case__desc">
-            Triaged 100+ real-time alerts spanning phishing, malware, email security, and
-            web-based attacks using structured IR playbooks, with full incident reports.
-          </p>
-          <div class="case__tags">
-            <span class="tag mono">LetsDefend</span>
-            <span class="tag mono">IR Playbooks</span>
-          </div>
-          <a href="https://github.com/ilolokerry/soc-alert-incident-reports" class="case__link mono" target="_blank" rel="noopener">view repo &rarr;</a>
-        </article>
-
       </div>
     </section>
 
@@ -135,15 +150,23 @@
       <h2 class="panel__title"><span class="mono">// </span>Toolkit</h2>
       <div class="toolkit-grid mono">
         <span>Splunk</span>
-        <span>Microsoft Sentinel</span>
-        <span>Defender XDR</span>
+        <span>Sentinel</span>
         <span>Elastic</span>
-        <span>Wazuh</span>
-        <span>Wireshark</span>
-        <span>YARA / Sigma</span>
-        <span>TheHive</span>
-        <span>Volatility</span>
-        <span>Zeek</span>
+        <span>Defender XDR</span>
+        <span>KQL</span>
+        <span>SPL</span>
+        <span>PowerShell</span>
+        <span>Linux</span>
+        <span>Windows</span>
+        <span>MITRE ATT&amp;CK</span>
+        <span>Log Analysis</span>
+        <span>Alert Triage</span>
+        <span>IOC Analysis</span>
+        <span>Network Analysis</span>
+        <span>Threat Intelligence</span>
+        <span>YARA</span>
+        <span>Sigma</span>
+        <span>Report Writing</span>
       </div>
     </section>
 
