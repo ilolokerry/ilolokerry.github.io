@@ -25,62 +25,88 @@
     <h1 class="hero__title">SOC Cheat-Sheets</h1>
     <p class="hero__summary">
       Quick-reference notes I keep on hand during triage &mdash; queries, event IDs, and
-      playbooks. Each entry opens the file in its GitHub repo.
+      playbooks. Each entry opens the PDF directly.
     </p>
   </header>
 
   <main>
     <section class="panel" id="sheet-index">
       <h2 class="panel__title"><span class="mono">// </span>Index</h2>
-      <p class="panel__subtitle">Click any entry to open the source file on GitHub.</p>
+      <p class="panel__subtitle">Click any entry to open the file.</p>
 
       <ul class="sheet-list mono" id="sheetList">
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
-          <span class="sheet-item__name">SOC Alert Triage Checklist</span>
+        <li class="sheet-item" data-url="docs/SOC-Alert-Triage-Report-template.pdf">
+          <span class="sheet-item__name">SOC Alert Triage Report Template</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
-          <span class="sheet-item__name">MITRE ATT&amp;CK Quick Reference</span>
+        <li class="sheet-item" data-url="docs/SOC-Case-Note-Templates.pdf">
+          <span class="sheet-item__name">SOC Case Note Templates</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/Threat-Hunting-Lab-Splunk">
-          <span class="sheet-item__name">SPL Query Cheat Sheet</span>
-          <span class="sheet-item__arrow">&rarr;</span>
-        </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
-          <span class="sheet-item__name">KQL Query Cheat Sheet</span>
-          <span class="sheet-item__arrow">&rarr;</span>
-        </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
+        <li class="sheet-item" data-url="docs/Windows_Event_ID_Reference.pdf">
           <span class="sheet-item__name">Windows Event ID Reference</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/Threat-Hunting-Lab-Splunk">
-          <span class="sheet-item__name">PowerShell Log Analysis Commands</span>
+        <li class="sheet-item" data-url="docs/Sysmon_Event_ID_Reference.pdf">
+          <span class="sheet-item__name">Sysmon Event ID Reference</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/Endpoint-Monitoring-Threat-Detection-Lab-with-Wazuh">
-          <span class="sheet-item__name">Linux Log Analysis Commands</span>
+        <li class="sheet-item" data-url="docs/Windows_Logon_Types.pdf">
+          <span class="sheet-item__name">Windows Logon Types</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry">
-          <span class="sheet-item__name">Network Traffic Analysis (Wireshark)</span>
+        <li class="sheet-item" data-url="docs/Windows_Process_Reference_Table.pdf">
+          <span class="sheet-item__name">Windows Process Reference Table</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry">
-          <span class="sheet-item__name">IOC Types &amp; Defanging Reference</span>
+        <li class="sheet-item" data-url="docs/SPL_Cheat_Sheet.pdf">
+          <span class="sheet-item__name">SPL Cheat Sheet</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
-        <li class="sheet-item" data-url="https://github.com/ilolokerry/soc-alert-incident-reports">
-          <span class="sheet-item__name">Incident Response Playbook Index</span>
+        <li class="sheet-item" data-url="docs/SPL_Attack_Detection_Cheat_Sheet.pdf">
+          <span class="sheet-item__name">SPL Attack Detection Cheat Sheet</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/Splunk_TTP_Detection_Cheatsheet.pdf">
+          <span class="sheet-item__name">Splunk TTP Detection Cheat Sheet</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/KQL_Cheat_Sheet.pdf">
+          <span class="sheet-item__name">KQL Cheat Sheet</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/KQL_Attack_Detection_Cheat_Sheet.pdf">
+          <span class="sheet-item__name">KQL Attack Detection Cheat Sheet</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/PowerShell.pdf">
+          <span class="sheet-item__name">PowerShell Command Reference</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/PowerShell_Incident_Response.pdf">
+          <span class="sheet-item__name">PowerShell Incident Response Guide</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/Enrichment.pdf">
+          <span class="sheet-item__name">Threat Intelligence Enrichment Guide</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/THREAT-REPORT-template.pdf">
+          <span class="sheet-item__name">Threat Report Template</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/sans_poster.pdf">
+          <span class="sheet-item__name">SANS Reference Poster</span>
+          <span class="sheet-item__arrow">&rarr;</span>
+        </li>
+        <li class="sheet-item" data-url="docs/Tools.pdf">
+          <span class="sheet-item__name">SOC Tools Reference</span>
           <span class="sheet-item__arrow">&rarr;</span>
         </li>
       </ul>
 
       <p class="panel__text sheet-note">
-        Placeholder titles &mdash; update the <span class="mono">data-url</span> on each
-        <span class="mono">&lt;li&gt;</span> in cheatsheets.html to point at the exact
-        file, and rename entries to match your actual cheat-sheet repo.
+        All entries open PDFs stored in this repo's <span class="mono">docs/</span> folder.
       </p>
     </section>
   </main>
